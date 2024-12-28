@@ -1,0 +1,197 @@
+.dashboard-container {
+  min-height: 100vh;
+    background-image: url('./bgImage/img1.jpg'); /* Add this line */
+    background-size: cover; /* Ensures the image covers the whole container */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    background-color: #f5f5f5;
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.hamburger-button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #ff3333;
+}
+
+.user-details {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.user-details h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.user-info {
+  margin: 10px 0;
+}
+
+.trips-section {
+  margin-top: 30px;
+}
+
+.trip-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.trip-card:hover {
+  transform: translateY(-5px);
+}
+
+.trip-card h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.trip-details {
+  color: #666;
+  margin: 5px 0;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.organize-button, .cart-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.organize-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.organize-button:hover {
+  background-color: #45a049;
+}
+
+.cart-button {
+  background-color: #007BFF;
+  color: white;
+}
+
+.cart-button:hover {
+  background-color: #0056b3;
+}
+
+.side-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.loading-message {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.error-message {
+  color: #ff4d4d;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart-button-header {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}

@@ -1,0 +1,229 @@
+.landing-container {
+    min-height: 100vh;
+    background-image: url('./bgImage/img1.jpg'); /* Add this line */
+    background-size: cover; /* Ensures the image covers the whole container */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    background-color: #f5f5f5;
+  }
+  
+  .landing-header {
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .landing-header h1 {
+    color: #2c3e50;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .cart-button {
+    background-color :transparent;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .cart-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #2c3e50;
+    padding: 5px 10px;
+    transition: color 0.2s;
+  }
+  
+  .menu-button:hover {
+    color: #34495e;
+  }
+  
+  .landing-main {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .trip-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .trip-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .trip-title {
+    color: #2c3e50;
+    font-size: 20px;
+    margin: 0 0 15px 0;
+  }
+  
+  .trip-details {
+    margin-bottom: 20px;
+  }
+  
+  .trip-description {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .trip-date, .trip-price {
+    color: #666;
+    margin: 8px 0;
+  }
+  
+  .trip-date span, .trip-price span {
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .trip-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .people-counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .people-counter label {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .people-counter input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .add-to-cart-button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #219a52;
+  }
+  
+  .loading-spinner {
+    text-align: center;
+    color: #666;
+    padding: 40px;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .no-trips {
+    text-align: center;
+    color: #666;
+    padding: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .landing-header {
+      padding: 15px 20px;
+    }
+  
+    .landing-main {
+      padding: 20px;
+    }
+  
+    .trips-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .section-title {
+      font-size: 24px;
+    }
+  }
+
+  .people-counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .people-counter button {
+    background: none;
+    border: none;
+    font-size: 25px; /* Makes the plus and minus thicker */
+    color: green;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s;
+  }
+  
+  .people-counter button:hover {
+    transform: scale(1.1); /* Slightly increases size on hover */
+  }
+  
+  .people-counter button:disabled {
+    color: lightgray; /* Disable color */
+    cursor: not-allowed;
+  }
+  
+  .people-counter span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
